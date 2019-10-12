@@ -8,6 +8,8 @@
     <title>Star Wars RPG</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -20,117 +22,81 @@
             <!--title-->
             <div class="row">
                 <div class="col-sm-6 offset-3">
-                    <h1 class="text-center text-white text-bold">Space Balls RPG</h1>
+                    <h1 class="text-center text-warning text-bold">Space Balls RPG</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <h2>Your Character</h2>
+                    <h4 class="text-warning">Your Character</h4>
                 </div>
             </div>
             <!--character cards-->
             <div class="row">
                 <div class="col-2">
-                    <div class="card" style="width: 12rem;">
+                    <div id="dark-helmet" class="card" style="width: 10rem;">
                         <div class="card-header">Dark Helmet</div>
-                        <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjs8pjSr5PlAhVYnJ4KHa5dChgQjRx6BAgBEAQ&url=https%3A%2F%2Fpressfrom.info%2Fca%2Fnews%2Fentertainment%2F-73753-rick-moranis-to-return-as-dark-helmet-from-spaceballs-on-the-goldbergs.html&psig=AOvVaw2wi0zTBDKcGY6IJvumFX-7&ust=1570854532225502"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Health</p>
-                        </div>
+                        <img src="assets/images/Dark-Helmet.jpg" class="card-img-top" alt="...">
+
                     </div>
                 </div>
                 <div class="col-2">
-                    <div class="card" style="width: 12rem;">
-                        <div class="card-header">Captain Lonestar</div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Health</p>
-                        </div>
+                    <div id="lone-starr" class="card" style="width: 10rem;">
+                        <div class="card-header">Lone Starr</div>
+                        <img src="assets/images/Lone-Starr.jpg" class="card-img-top" alt="...">
+
                     </div>
                 </div>
                 <div class="col-2">
-                    <div class="card" style="width: 12rem;">
+                    <div id="barf" class="card" style="width: 10rem;">
                         <div class="card-header">Barf</div>
-                        <img src="https://i.pinimg.com/originals/d3/93/93/d393934939992073c4b35b822ab63ff2.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Health</p>
-                        </div>
+                        <img src="assets/images/Barf.jpeg" class="card-img-top" style="height: 10rem;" alt="...">
+
                     </div>
                 </div>
                 <div class="col-2">
-                    <div class="card" style="width: 12rem;">
-                        <div class="card-header">Pizza the Hut</div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Health</p>
+                    <div id="pizza-the-hut" class="card" style="width: 10rem;">
+                        <div class="card-header">Pizza the Hut<div id="pizza-hp"> </div>
                         </div>
+                        <img src="assets/images/pizza-the-hut.jpg" class="card-img-top" alt="...">
+
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <h2>Enemies available to attack</h2>
+                    <h4 class="text-warning">Enemies available to attack</h4>
 
                 </div>
             </div>
             <!--Enemies to attack-->
             <div class="row">
-                <div class="col-2">
-                    <div class="card" style="width: 12rem;">
-                        <div class="card-header">Name</div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Health</p>
-                        </div>
-                    </div>
+                <div id="enemy-a" class="col-2" style="height: 12rem;">
+
                 </div>
-                <div class="col-2">
-                    <div class="card" style="width: 12rem;">
-                        <div class="card-header">Name</div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Health</p>
-                        </div>
-                    </div>
+                <div id="enemy-b" class="col-2" style="height: 12rem;">
+
                 </div>
-                <div class="col-2">
-                    <div class="card" style="width: 12rem;">
-                        <div class="card-header">Name</div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Health</p>
-                        </div>
-                    </div>
+                <div id="enemy-c" class="col-2" style="height: 12rem;">
+
                 </div>
 
 
             </div>
             <!--Fight Section-->
             <!--Attack Button-->
-            <div class="row">
-                <div class="col-2 offset-1">
-                    <button type="button" class="btn btn-secondary m-2">Attack!</button>
-                </div>
-            </div>
             <!--Defender-->
 
             <div class="row">
-                <div class="col">
-                    <h2>Defender</h2>
-
+                <div class="col-4">
+                    <h4 class="text-warning">Defender</h4>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-secondary m-2 text-warning">Attack!</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-2">
-                    <div class="card" style="width: 12rem;">
-                        <div class="card-header">Name</div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Health</p>
-                        </div>
-                    </div>
+                <div id="defender" class="col-2" style="height: 12rem;">
+
                 </div>
             </div>
 
