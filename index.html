@@ -25,51 +25,80 @@
                     <h1 class="text-center text-warning text-bold">Space Balls RPG</h1>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col">
                     <h4 class="text-warning">Your Character</h4>
                 </div>
             </div>
-            <!--character cards-->
-            <div class="row">
-                <div class="col-2">
-                    <div id="dark-helmet" class="card" style="width: 10rem;">
-                        <div class="card-header">Dark Helmet</div>
+
+            <!---------------character cards------------------->
+            <!--dark helmet-->
+            <div id="char-row" class="row">
+                <div id="dark-helmet" class="col-2">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card-header">Dark Helmet<div id="helmet-hp"> </div>
+                        </div>
                         <img src="assets/images/Dark-Helmet.jpg" class="card-img-top" alt="...">
 
                     </div>
                 </div>
-                <div class="col-2">
-                    <div id="lone-starr" class="card" style="width: 10rem;">
-                        <div class="card-header">Lone Starr</div>
+                <!--lone starr-->
+                <div id="lone-starr" class="col-2">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card-header">Lone Starr<div id="starr-hp"> </div>
+                        </div>
                         <img src="assets/images/Lone-Starr.jpg" class="card-img-top" alt="...">
 
                     </div>
                 </div>
-                <div class="col-2">
-                    <div id="barf" class="card" style="width: 10rem;">
-                        <div class="card-header">Barf</div>
+                <!--barf-->
+                <div id="barf" class="col-2">
+                    <div class="card" style="width: 10rem;">
+                        <div class="card-header">Barf<div id="barf-hp"> </div>
+                        </div>
                         <img src="assets/images/Barf.jpeg" class="card-img-top" style="height: 10rem;" alt="...">
 
                     </div>
                 </div>
-                <div class="col-2">
-                    <div id="pizza-the-hut" class="card" style="width: 10rem;">
+                <!--pizza the hut-->
+                <div id="pizza-the-hut" class="col-2">
+                    <div class="card" style="width: 10rem;">
                         <div class="card-header">Pizza the Hut<div id="pizza-hp"> </div>
                         </div>
                         <img src="assets/images/pizza-the-hut.jpg" class="card-img-top" alt="...">
-
                     </div>
                 </div>
             </div>
+
+
+            <!--Heading and button row-->
             <div class="row">
-                <div class="col">
+                <div class="col-6">
+                    <h4 class="text-warning">Defender</h4>
+                </div>
+
+                <div class="col-6">
                     <h4 class="text-warning">Enemies available to attack</h4>
+                </div>
+
+
+            </div>
+            <!--Combat row-->
+            <div class="row">
+
+                <!--Defender-->
+                <div id="defender" class="col-2" style="height: 12rem;">
 
                 </div>
-            </div>
-            <!--Enemies to attack-->
-            <div class="row">
+
+                <!--Attack Button-->
+                <div class="col-2">
+                    <button id="attack-button" type="button" class="btn btn-secondary m-2 text-warning">Attack!</button>
+                </div>
+
+                <!--Enemies to attack-->
+
                 <div id="enemy-a" class="col-2" style="height: 12rem;">
 
                 </div>
@@ -80,22 +109,16 @@
 
                 </div>
 
-
             </div>
-            <!--Fight Section-->
-            <!--Attack Button-->
-            <!--Defender-->
 
-            <div class="row">
-                <div class="col-4">
-                    <h4 class="text-warning">Defender</h4>
-                </div>
-                <div class="col-2">
-                    <button type="button" class="btn btn-secondary m-2 text-warning">Attack!</button>
+            <!--Empty bottom row-->
+            <div id="empty-row" class="row">
+                <div class="col-12" style="height: 12rem;">
                 </div>
             </div>
+
             <div class="row">
-                <div id="defender" class="col-2" style="height: 12rem;">
+                <div class="col-12" style="height: 12rem;">
 
                 </div>
             </div>
